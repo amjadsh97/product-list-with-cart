@@ -11,6 +11,7 @@ html { font-family: "Red Hat Text", sans-serif;}
 .cart > * + * {margin-top:20px}
 .food-type { font-size: clamp(4rem, 5vw, 5rem); margin-bottom: 40px; color: var(--rose-900);}
 .picture-wrapper { position: relative; padding-bottom: 108%; overflow: hidden; border-radius: 10px;}
+.product-item.has-products .picture-wrapper {outline: 2px solid var(--red);}
 .picture-wrapper img { position: absolute; inset: 0; height: 100%; display: block; width: 100%; object-fit: cover;}
 .product-inner { position: relative;}
 .buttons-wrapper { background: var(--rose-50); display: flex; align-items: center; justify-content: center; min-width: 165px; position: absolute; top: -20px; left: 50%; transform: translate(-50%); min-height: 45px; border-radius: 30px;}

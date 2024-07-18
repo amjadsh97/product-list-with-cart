@@ -79,7 +79,7 @@ const ProductItem: React.FC<{ product: Product }> = ({ product }) => {
   }, {} as Record<string, number>)[product.name] || 0;
 
   return (
-    <div className="product-item">
+    <div className={`product-item ${productCount > 0 ? "has-products":""}`}>
       <div className="picture-wrapper">
         <picture>
           <source media="(max-width:767px)" srcSet={product.image.mobile} />
